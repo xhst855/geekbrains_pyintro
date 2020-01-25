@@ -48,7 +48,9 @@ while n > 0:
     i = n % 10
     if max_n < i:
         max_n = i
-    n = int(n / 10)
+    if max_n == 9:
+        break
+    n = n // 10
 print(f"Maximum number is: {max_n}")
 
 """
